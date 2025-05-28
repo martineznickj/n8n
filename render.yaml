@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: n8n
+    env: node
+    buildCommand: pnpm install
+    startCommand: pnpm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 20.11.1
+      - key: PORT
+        value: 5678
